@@ -8,6 +8,9 @@
 </head>
 <body>
     <form action="./landing-page.php" method="POST">
+        <h1>
+            LA PAROLA CENSURATA &Egrave; CANE
+        </h1>
         <label for="text">
             INSERISCI QUI IL TESTO <br>
         </label>
