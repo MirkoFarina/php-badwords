@@ -7,6 +7,7 @@
     <title>PHP Badwords</title>
 </head>
 <body>
+    <!-- CON IL FORM INVIO I DATI ALLA MIA PAGINA DI ARRIVO, E LI MANDO TRAMITE POST COSì DA RENDERLI NON VISIBILI NEL URL -->
     <form action="./landing-page.php" method="POST">
         <label for="text">
             INSERISCI QUI IL TESTO 
