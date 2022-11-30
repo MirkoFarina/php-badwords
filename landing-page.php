@@ -7,8 +7,7 @@
     $length_text = strlen($text);
 
     // Censuro la badword 
-    $censured_text = str_replace( $badword, '****', $text);
-
+    $censured_text = str_replace( $badword, '***', $text);
 ?>
 
 <!DOCTYPE html>
