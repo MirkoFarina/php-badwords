@@ -1,3 +1,7 @@
+<?php  
+    $text = $_POST['text']
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +11,8 @@
     <title>Landing Page</title>
 </head>
 <body>
-    
+    <p>
+        <?php echo $text ?>
+    </p>
 </body>
 </html>
