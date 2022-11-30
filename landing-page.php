@@ -1,5 +1,5 @@
 <?php  
-    // Prendo il testo che mi arriva dal form nella page index
+    // Prendo il testo che mi arriva dal form nella page index e la badword
     $text = $_POST['text'];
     $badword = $_POST['badword'];
 
