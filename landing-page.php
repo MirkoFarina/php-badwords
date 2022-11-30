@@ -1,5 +1,7 @@
 <?php  
-    $text = $_POST['text']
+    $text = $_POST['text'];
+
+    $length_text = strlen($text);
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +13,9 @@
     <title>Landing Page</title>
 </head>
 <body>
+    <span>
+        Il tuo testo é lungo: <?php echo $length_text ?> caratteri
+    </span>
     <p>
         <?php echo $text ?>
     </p>
