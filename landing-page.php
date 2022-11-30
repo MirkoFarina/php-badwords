@@ -1,12 +1,14 @@
 <?php  
     // Prendo il testo che mi arriva dal form nella page index
     $text = $_POST['text'];
+    $badword = $_POST['badword'];
 
     // Prendo la lunghezza del testo che mi viene passato
     $length_text = strlen($text);
 
     // Censuro la badword 
-    $censured_text = str_replace('cane', '****', $text);
+    $censured_text = str_replace( $badword, '****', $text);
+
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +24,7 @@
         Questo è il tuo testo senza censure:
     </h2>
     <span>
-        Il tuo testo é lungo: <?php echo $length_text ?> caratteri
+        Il tuo testo è lungo: <?php echo $length_text ?> caratteri
     </span>
     <p>
         <?php echo $text ?>
@@ -30,10 +32,11 @@
 
     <!-- STAMPO IL TESTO CON LA PAROLA CENSURATA -->
     <h2>
+        La parola da censurare scelta da te è: <?php echo $badword  ?> <br>
         Questo è il tuo testo censurato:
     </h2>
     <span>
-        Il tuo testo é lungo: <?php echo $length_text ?> caratteri
+        Il tuo testo è lungo: <?php echo $length_text ?> caratteri
     </span>
     <p>
         <?php echo $censured_text ?>

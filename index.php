@@ -8,15 +8,20 @@
 </head>
 <body>
     <form action="./landing-page.php" method="POST">
-        <h1>
-            LA PAROLA CENSURATA &Egrave; CANE
-        </h1>
         <label for="text">
-            INSERISCI QUI IL TESTO <br>
+            INSERISCI QUI IL TESTO 
         </label>
+        <br>
         <textarea name="text" id="" cols="30" rows="5" placeholder="INSERISCI IL TESTO DA INVIARE ...">
             
         </textarea>
+        <br>
+        <label for="badword">
+            INSERISCI LA PAROLA DA CENSURARE
+        </label>
+        <br>
+        <input type="text" name="badword" placeholder="inserisci la parola da censurare">
+        <br>
         <button type="submit">
             INVIA
         </button>
